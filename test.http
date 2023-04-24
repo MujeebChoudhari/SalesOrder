@@ -1,0 +1,18 @@
+###
+GET http://localhost:4004/catalog/Order
+
+###
+POST http://localhost:4004/catalog/Order
+Content-Type: application/json
+
+  {
+      "ID": "482d1c49-a7d2-41bc-9302-6b7447467e36",
+      "createdAt": "2023-04-22T11:51:39.134Z",
+      "createdBy": "anonymous",
+      "modifiedAt": "2023-04-22T11:51:39.134Z",
+      "modifiedBy": "anonymous",
+      "orderID": "525",
+      "orderDate": "2023-04-20",
+      "amount": 5458548,
+      "currency_code": "INR"
+    }

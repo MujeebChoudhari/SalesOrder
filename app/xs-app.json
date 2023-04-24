@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "authenticationType": "none",
+      "csrfProtection": false,
+      "source": "^/catalog/",
+      "destination": "cap-catalog-api"
+    },	
+    {
+      "source": "^/app/(.*)$",
+      "target": "$1",
+      "localDir": ".",
+      "cacheControl": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "source": "^/(.*)$",
+      "target": "$1",
+      "destination": "srv-api",
+      "csrfProtection": true
+    }
+  ]
+}
